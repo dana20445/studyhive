@@ -1,0 +1,307 @@
+body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #E1C699;
+        color: #3E2F22; 
+    }
+    header {
+        padding: 15px 40px;
+        box-shadow: 0 2px 10px gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        background-color: #C9A873;
+    }
+    .nav{
+        display: flex;
+        justify-content: end;
+        list-style: none;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav a {
+        text-decoration: none;
+        color: #3E2F22;
+        font-weight: 500;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .nav a:hover {
+        background-color: #3E2F22;
+        color: #E1C699;
+    }
+    #logo img{
+        width: 90px;  
+        height: auto;
+    }
+    #imgcontainer {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #imgcontainer img {
+        width: 100%;
+        height: 600px;
+        display: block;
+    }
+    .textover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #3E2F22;
+        background: rgba(255, 251, 251, 0.7);
+        padding: 20px 40px;
+    }
+    .textover h2 {
+        margin-bottom: 15px;
+    }
+    #studybutton {
+        background-color: #E1C699;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: larger;
+        border: none;
+    }
+    #studybutton a{
+        color: #3E2F22;
+        text-decoration: none;
+    }
+    #studybutton:hover {
+        background-color: #a9926a;
+    }    
+    .offer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;           
+        padding-top: 40px;
+        margin-bottom: 40px;
+        margin: 0px 40px;
+    }
+    .ophoto {
+        flex: 1;
+        max-width: 600px;
+        
+    }
+    .ophoto img {
+        width: 350px;
+        max-height: 250px;
+        box-shadow: 0 5px 10px black;
+    }
+    .otext {
+        flex: 3;
+    }
+    .underh{
+        display: flex;
+        gap: 80px;
+        background-color:#fff4c2;
+        padding: 50px;
+        border-radius: 15px;
+    }
+    .otext p {
+        text-align: center;
+        margin: 50px 0;
+        line-height: 2;
+        width: 80%;
+        padding-bottom: 8px;
+        font-size: larger;
+    }
+    .goal{
+        margin-top: 20px;
+        text-align: center;
+        border-bottom: thin solid #b39567;
+        border-top: thin solid #b39567;
+        margin-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    .goal p{
+        text-align: center;
+        margin: 0 30%;
+        line-height: 2;
+        padding-bottom: 30px;
+        font-size: larger;
+    }
+    .link{
+        font-weight: bold;
+        text-decoration: none;
+        color: #3E2F22;
+    }
+    footer{
+        background-color: #C9A873;
+    }
+    .f{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
+        align-items: center;
+        border-bottom: thin solid #d2b48c;
+    }
+    .f img{
+        width: 90px;  
+        height: auto;
+        margin-bottom: 5px;
+        margin-left: 30px;
+    }
+    #icons{
+        font-size: 30px;
+    }
+    .quicklink{
+        display: flex;
+        justify-content: flex-start;
+        margin: 40px;
+        gap: 80px;
+        line-height: 1.5;
+    }
+    .quicklink ul{
+        list-style-type: none;
+    }
+    .quicklink li :hover{
+        text-decoration: underline;
+    }
+    .footnav a{
+        text-decoration: none;
+        color: #3E2F22;
+    }
+    .end{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b39567;
+        height: 40px;
+
+    }
+@media (min-width: 600px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    .nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 17px;
+    }
+    #imgcontainer img {
+        height: 450px;
+        object-fit: cover;
+    }
+    .textover {
+        width: 70%;
+        padding: 25px 35px;
+        font-size: 18px;
+    }
+    .underh {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+        gap: 50px;
+    }
+    .ophoto img {
+        width: 80%;
+        max-width: 380px;
+    }
+    .otext p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    .goal p {
+        margin: 0 15%;
+        font-size: 18px;
+    }
+    .quicklink {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 600px){
+    header {
+        padding: 10px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .nav a:hover{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #logo img {
+        width: 70px;
+    }
+    #imgcontainer img {
+        height: 300px;
+    }
+    .textover {
+        width: 90%;
+        padding: 15px;
+    }
+    .textover h1 {
+        font-size: 20px;
+    }
+    #studybutton {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .offer {
+        margin: 20px;
+        padding-top: 20px;
+    }
+    .underh {
+        padding: 20px;
+        border-radius: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ophoto img {
+        width: 100%;
+    }
+    .otext p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .goal p {
+        margin: 3px 5px;
+        font-size: 16px;
+    }
+    footer {
+        text-align: center;
+    }
+    .f {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .quicklink {
+        flex-direction: row;
+       justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .f img{
+        width: 70px;
+        margin-top: 10px;
+    }
+    #icons i {
+        margin: 0 5px;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    #icons i {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+}
